@@ -1,5 +1,8 @@
 section {
-    background-color: rgb(247, 85, 85);
+    background-color: rgb(85, 174, 247);
     padding-top: 10px;
     padding-bottom: 10px
 }
+
+#map {height: 450px;
+width: 450px}
