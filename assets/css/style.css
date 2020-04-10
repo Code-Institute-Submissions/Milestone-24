@@ -1,8 +1,97 @@
+
+
+
 section {
-    background-color: rgb(85, 174, 247);
+    background-color: rgb(220, 220, 220);
     padding-top: 10px;
     padding-bottom: 10px
 }
 
+h1 {    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+h2 {    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+h3 {    padding-top: 10px;
+    padding-bottom: 10px
+}
+
 #map {height: 450px;
-width: 450px}
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+img {padding-top: 10px;
+    padding-bottom: 10px
+}
+
+/* --------------- footer --------------*/
+
+#footer {
+    background-color: rgb(220, 220, 220);
+}
+
+.social-links {
+    padding-bottom: 15px
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out
+}
+
+.social-links li a i:hover {
+    background: #444fe9
+}
+
+#footer-details {
+    padding: 20px
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
