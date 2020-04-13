@@ -16,20 +16,26 @@ h3 {    padding-top: 10px;
     padding-bottom: 10px
 }
 
+h5 {    padding-top: 10px;
+    padding-bottom: 10px
+}
+
 #map {height: 450px;
-    width: 100%;
+    max-width: 750px;
     padding-top: 10px;
     padding-bottom: 10px
 }
 
-img {padding-top: 10px;
-    padding-bottom: 10px
+#pics {padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px
 }
 
-#controls {padding-top: 10px;
-    padding-bottom: 10px
+#controls {    padding-bottom: 10px
 }
 
+#locationField { padding-bottom: 10px
+}
 
 
 /* --------------- footer --------------*/
@@ -62,7 +68,7 @@ img {padding-top: 10px;
 }
 
 #footer-details {
-    padding: 20px
+    padding: 10px
 }
 
 .fa:hover {

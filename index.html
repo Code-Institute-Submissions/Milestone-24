@@ -15,25 +15,25 @@
 </head>
 
 <body>
+
+	<!------------------------------------First Page Here for Intro and Data Entry-->
 	<section id="first-page">
 		<div class="container-fluid">
 
 			<div class="row">
-				<div class="col-sm-6">
-					<h1>Welcome to Victor's Vacations! </h1>
-					<h2>Your next great vacation idea starts here.... </h2>
+				<div class="col-sm">
+					<h1>Welcome to Dan's City Breaks! </h1>
+					<h2>Choose from a wide selection of popular city locations.... </h2>
 
 					<div class="hotel-search">
+
 						<div id="findhotels">
-							<h2>Find hotels in:</h2>
+							<h5>Find hotels and things to do by selecting from the Country Location drop-down list
+								immediatley below:</h2>
 						</div>
 
-						<div id="locationField">
-							<input id="autocomplete" placeholder="Enter a city" type="text" />
-						</div>
-
-							<div id="controls">
-								<select id="country">
+						<div id="controls">
+							<select id="country">
           <option value="all">All</option>
           <option value="au">Australia</option>
           <option value="br">Brazil</option>
@@ -49,69 +49,74 @@
           <option value="us" selected>U.S.A.</option>
           <option value="uk">United Kingdom</option>
                 </select>
-							</div>
+						</div>
 
+						<div id="findhotels">
+							<h5>Then free-type your preferred City Location here:</h2>
+						</div>
+
+						<div id="locationField">
+							<input id="autocomplete" placeholder="Enter a city" type="text" />
+						</div>
 						</div>
 
 						<div id="map"></div>
 					</div>
-
-					<div class="col-sm-6">
-
-						<h2>Finding solutions for customers.... </h2>
-						<img src="assets/images/godfather.png" style="width:100%; height:auto;">
-            		</div>
-					</div>
 				</div>
+			</div>
 	</section>
 
+	<!------------------------------------Second Page Here for Results Table-->
 
 	<section id="second-page">
 		<div class="container-fluid">
 
 			<div class="row">
-			</div>
-			<h3>Contents for 3rd page go here...</h3>
-			<div class="col-sm-6">
-			</div>
+				<div class="col-sm">
 
+					<h5>Once your City has been entered, please select from the hotel options listed below, or
+						directly
+						from the
+						map above...</h5>
+
+					<div id="listing">
+						<table id="resultsTable">
+							<tbody id="results"></tbody>
+						</table>
+					</div>
+
+					<div style="display: none">
+						<div id="info-content">
+							<table>
+								<tr id="iw-url-row" class="iw_table_row">
+									<td id="iw-icon" class="iw_table_icon"></td>
+									<td id="iw-url"></td>
+								</tr>
+								<tr id="iw-address-row" class="iw_table_row">
+									<td class="iw_attribute_name">Address:</td>
+									<td id="iw-address"></td>
+								</tr>
+								<tr id="iw-phone-row" class="iw_table_row">
+									<td class="iw_attribute_name">Telephone:</td>
+									<td id="iw-phone"></td>
+								</tr>
+								<tr id="iw-rating-row" class="iw_table_row">
+									<td class="iw_attribute_name">Rating:</td>
+									<td id="iw-rating"></td>
+								</tr>
+								<tr id="iw-website-row" class="iw_table_row">
+									<td class="iw_attribute_name">Website:</td>
+									<td id="iw-website"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
 		</div>
 
-		<!------------------------------------New Section Here-->
-
-
-		<div id="listing">
-			<table id="resultsTable">
-				<tbody id="results"></tbody>
-			</table>
-		</div>
-
-		<div style="display: none">
-			<div id="info-content">
-				<table>
-					<tr id="iw-url-row" class="iw_table_row">
-						<td id="iw-icon" class="iw_table_icon"></td>
-						<td id="iw-url"></td>
-					</tr>
-					<tr id="iw-address-row" class="iw_table_row">
-						<td class="iw_attribute_name">Address:</td>
-						<td id="iw-address"></td>
-					</tr>
-					<tr id="iw-phone-row" class="iw_table_row">
-						<td class="iw_attribute_name">Telephone:</td>
-						<td id="iw-phone"></td>
-					</tr>
-					<tr id="iw-rating-row" class="iw_table_row">
-						<td class="iw_attribute_name">Rating:</td>
-						<td id="iw-rating"></td>
-					</tr>
-					<tr id="iw-website-row" class="iw_table_row">
-						<td class="iw_attribute_name">Website:</td>
-						<td id="iw-website"></td>
-					</tr>
-				</table>
-			</div>
-		</div>
 
 		<script>
 			// This example uses the autocomplete feature of the Google Places API.
@@ -415,47 +420,59 @@
 		<footer class="container-fluid">
 			<div id="footer-details" class="row">
 				<div class="col-sm">
-					<h5 class="uppercase general-sub">Social</h5>
-					<ul class="list-inline social-links">
-						<li class="list-inline-item">
-							<a target="_blank" href="#">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-								<span class="sr-only">Facebook</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="#">
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-								<span class="sr-only">twitter</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="#">
-								<i class="fa fa-linkedin" aria-hidden="true"></i>
-								<span class="sr-only">LinkedIn</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="#">
-								<i class="fa fa-pinterest" aria-hidden="true"></i>
-								<span class="sr-only">Pinterest</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="#">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-								<span class="sr-only">Instagram</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="#">
-								<i class="fa fa-youtube" aria-hidden="true"></i>
-								<span class="sr-only">YouTube</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+
+					<h5 class="uppercase general-sub">Please contact our offices directly at any time to find out
+						more...</h5>
+					<div id="pics">
+						<img src="assets/images/New_York.jpg" style="width:150px; height:150px;">
+</div>
+						<div id="pics">
+							<img src="assets/images/Paris.jpg" style="width:150px; height:150px;">
+</div>
+							<div id="pics">
+								<img src="assets/images/London.jpg" style="width:150px; height:150px;">
+</div>
+								<h5 class="uppercase general-sub">Social</h5>
+								<ul class="list-inline social-links">
+									<li class="list-inline-item">
+										<a target="_blank" href="#">
+											<i class="fa fa-facebook" aria-hidden="true"></i>
+											<span class="sr-only">Facebook</span>
+										</a>
+									</li>
+									<li class="list-inline-item">
+										<a target="_blank" href="#">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+											<span class="sr-only">twitter</span>
+										</a>
+									</li>
+									<li class="list-inline-item">
+										<a target="_blank" href="#">
+											<i class="fa fa-linkedin" aria-hidden="true"></i>
+											<span class="sr-only">LinkedIn</span>
+										</a>
+									</li>
+									<li class="list-inline-item">
+										<a target="_blank" href="#">
+											<i class="fa fa-pinterest" aria-hidden="true"></i>
+											<span class="sr-only">Pinterest</span>
+										</a>
+									</li>
+									<li class="list-inline-item">
+										<a target="_blank" href="#">
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+											<span class="sr-only">Instagram</span>
+										</a>
+									</li>
+									<li class="list-inline-item">
+										<a target="_blank" href="#">
+											<i class="fa fa-youtube" aria-hidden="true"></i>
+											<span class="sr-only">YouTube</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 		</footer>
 
 	</Section>
