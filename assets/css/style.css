@@ -17,18 +17,25 @@ h3 {    padding-top: 10px;
 }
 
 h5 {    padding-top: 10px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+}
+
+h6 {    max-width: 240px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #map {height: 450px;
-    max-width: 750px;
+    max-width: 1000px;
     padding-top: 10px;
     padding-bottom: 10px
 }
 
-#pics {padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px
+#pics {    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.pic-text { max-width: 240px
 }
 
 #controls {    padding-bottom: 10px
@@ -65,10 +72,6 @@ h5 {    padding-top: 10px;
 
 .social-links li a i:hover {
     background: #444fe9
-}
-
-#footer-details {
-    padding: 10px
 }
 
 .fa:hover {
