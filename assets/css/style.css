@@ -1,3 +1,6 @@
+body {   background-color: rgb(220, 220, 220);
+}
+
 section {
     background-color: rgb(220, 220, 220);
     padding-top: 10px;
@@ -26,7 +29,7 @@ h6 {    max-width: 240px;
 }
 
 #map {height: 450px;
-    max-width: 1000px;
+    max-width: 100%;
     padding-top: 10px;
     padding-bottom: 10px
 }
@@ -45,11 +48,16 @@ h6 {    max-width: 240px;
 }
 
 
+#contacts {
+    padding-top: 10px
+}
+
 /* --------------- footer --------------*/
 
 #footer {
-    background-color: rgb(220, 220, 220);
+    padding-top: 10px
 }
+
 
 .social-links {
     padding-bottom: 15px
