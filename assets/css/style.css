@@ -2,7 +2,6 @@ body {   background-color: rgb(220, 220, 220);
 }
 
 section {
-    background-color: rgb(220, 220, 220);
     padding-top: 10px;
     padding-bottom: 10px
 }
@@ -28,13 +27,19 @@ h6 {    max-width: 240px;
     padding-bottom: 10px;
 }
 
-#map {height: 450px;
+#map {height: 550px;
     max-width: 100%;
     padding-top: 10px;
     padding-bottom: 10px
 }
 
 #pics {    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+#pic-master { height: 550px;
+    max-width: 384px;
+    padding-top: 10px;
     padding-bottom: 10px
 }
 

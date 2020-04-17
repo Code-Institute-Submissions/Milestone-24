@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-
 	<title>Map Web Page</title>
 </head>
 
@@ -18,18 +17,21 @@
 
 	<!------------------------------------First Page Here for Intro and Data Entry-->
 	<section id="first-page">
-		<div class="container-fluid">
+		<div class="container">
 
 			<div class="row">
 				<div class="col-sm">
-					<h1>Welcome to Dan's City Breaks! </h1>
-					<h2>Choose from a wide selection of popular city locations.... </h2>
+					<h1>Welcome to Dan's City Breaks!</h1>
+					<h1>Choose from a wide selection of popular City locations....</h1>
+				</div>
+			</div>
 
+            <div class="row">
+                <div class="col-sm-6">
 					<div class="hotel-search">
 
 						<div id="findhotels">
-							<h5>Find hotels and things to do by selecting from the Country Location drop-down list
-								immediatley below:</h2>
+							<h5>Find hotels and things to do by selecting from the Country Location drop-down list:</h2>
 						</div>
 
 						<div id="controls">
@@ -50,20 +52,41 @@
           <option value="uk">United Kingdom</option>
                 </select>
 						</div>
+					</div>
+                </div>
+                
+                <div class="col-sm-6">
+				    <div class="hotel-search">
 
 						<div id="findhotels">
-							<h5>Then free-type your preferred City Location here:</h2>
+							<h5>Then free-type your preferred City Location:</h2>
 						</div>
 
 						<div id="locationField">
-							<input id="autocomplete" placeholder="Enter a city" type="text" />
-						</div>
+							<input id="autocomplete" placeholder="Enter a City" type="text" />
 						</div>
 
-						<div id="map"></div>
 					</div>
+                </div>
+            </div>
+
+		</div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-6">
+					<div id="map"></div>
 				</div>
-			</div>
+
+                <div class="col-sm-6">
+                    <div id="pic-master">
+                       <img src="assets/images/Venice.PNG" style="width:100%; height:100%;">
+                    </div>
+                </div>
+            </div>
+
+		</div>  
 	</section>
 
 	<!------------------------------------Second Page Here for Results Table-->
@@ -424,9 +447,9 @@
             <div class="row">
 				<div class="col-sm">
 					<div id="pics">
-                        <img src="assets/images/New_York1.PNG" style="width:95%; height:95%;">
-                        <h6>Street Name
-                        <br>New York.
+                        <img src="assets/images/New_York1.PNG" style="width:100%; height:100%;">
+                        <h6>New York
+                        <br>USA
                         <br>Tel #.
                         <br>Web address.</h6>
                     </div>
@@ -434,9 +457,9 @@
                 
                 <div class="col-sm">
 					<div id="pics">
-                        <img src="assets/images/Paris1.PNG" style="width:95%; height:95%;">
-                        <h6>Street Name
-                        <br>Paris.
+                        <img src="assets/images/Paris3.PNG" style="width:100%; height:100%;">
+                        <h6>Paris
+                        <br>France
                         <br>Tel #.
                         <br>Web address.</h6>
                     </div>
@@ -444,9 +467,9 @@
 
                 <div class="col-sm">
 					<div id="pics">
-                        <img src="assets/images/London1.PNG" style="width:95%; height:95%;">
-                        <h6>Street Name
-                        <br>Country.
+                        <img src="assets/images/London1.PNG" style="width:100%; height:100%;">
+                        <h6>London
+                        <br>England
                         <br>Tel #.
                         <br>Web address.</h6>
                     </div>
@@ -454,9 +477,9 @@
 
                 <div class="col-sm">
 					<div id="pics">
-                        <img src="assets/images/Australia1.PNG" style="width:95%; height:95%;">
-                        <h6>Street Name
-                        <br>London.
+                        <img src="assets/images/Australia3.PNG" style="width:100%; height:100%;">
+                        <h6>Sydney
+                        <br>Australia
                         <br>Tel #.
                         <br>Web address.</h6>
                     </div>
@@ -468,7 +491,7 @@
     <Section id="footer">
             <div class="container-fluid">
                 <div class="row">
-                     <div class="col-sm-6">
+                     <div class="col-sm">
 			            <h5>Social</h5>
 					    <ul class="list-inline social-links">
 						    <li class="list-inline-item">
