@@ -1,5 +1,16 @@
-body {   background-color: rgb(220, 220, 220);
+body {
+    background-color: rgb(220, 220, 220);
 }
+
+
+#first-page {    background-image: url=("assets/images/gate.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px dashed #333;
+
+}
+
 
 section {
     padding-top: 10px;
