@@ -30,7 +30,7 @@ Specific User Stories for this project are:
   - Provide a user-friendly web-site that helps users to decide where to travel for their City Break 
   - Make optimal use of the Google Maps API and the functionality available to site owners and to users  
 
-The following wireframes provide the insight and logic into the design and purpose of the site [mock-ups] (https://github.com/tenerim/Milestone-2/blob/d78928c34db959f0c286267eb92c5f9d5eabdf15/assets/Wireframes)
+The following wireframes provide the insight and logic into the design and purpose of the site [mock-ups](https://github.com/tenerim/Milestone-2/blob/d78928c34db959f0c286267eb92c5f9d5eabdf15/assets/Wireframes)
 
 1. The opening page is simple yet informative. It provides the user with an immediate and simple view with instructions on what 
   the user needs to do to 'choose from a wide selection of popular City locations'.
@@ -71,21 +71,22 @@ name of the hotel, the address, a contact number, a link to the hotel website, a
 <!-----------Technologies Used has been updated------>
 
 # Technologies Used
-* [html] (https://en.wikipedia.org/wiki/HTML) 
+* [html](https://en.wikipedia.org/wiki/HTML) 
   - the base language used to build the web-site
-* [css3] (https://en.wikipedia.org/wiki/Cascading_Style_Sheets) 
+* [css3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) 
   - to simplify the format and layout of the web pages by enhancing the code in the html pages 
-* [jQuery] (https://jquery.com/)
+* [jQuery](https://jquery.com/)
   - to simplify DOM manipulation and interact with the Google Maps API
-* [Bootstrap] (https://getbootstrap.com/)
+* [Bootstrap](https://getbootstrap.com/)
   - To use ready-made design templates to enhance the front-end appearance and user-experience of the web-site 
-* [font-awesome] (https://cdnjs.com/libraries/font-awesome)
+* [font-awesome](https://cdnjs.com/libraries/font-awesome)
   - Selected from the cdnjs libraries to support the 'Social' links in the footer of the Application 
 
 # Testing
 * The following web sites were used to validate my code: 
-  - https://validator.w3.org/ to test and validate my html file <!----------Would be great if we could take a look at this together------->
-  - https://jigsaw.w3.org/css-validator/#validate_by_input to test and validate by css file
+  - [W3C-HTML](https://validator.w3.org/) to test and validate my html file 
+<!----------Would be great if we could take a look at this together------->
+  - [W3C-CSS] https://jigsaw.w3.org/css-validator/#validate_by_input to test and validate by css file
 <!--------Can I test my JS code anywhere?---------->
 <!--------How can I use Jasmine (if at all) to test my code?------> 
 
@@ -100,19 +101,18 @@ name of the hotel, the address, a contact number, a link to the hotel website, a
   - All images are coded to fit the full width of the screen on any mobile device, and to sit side-by-side on a larger device. 
   - The Social links in the footer tie back to the Application page (as currently intended) and the colour of each changes as appropriate when hovered over.
 
-* User Story Testing:
-1. As a user: 
+* User Story Testing for the User: 
   - The user is able to quickly and easily select from a number of country locations, and is able to choose from various hotels
   in an area they are interested in traveling to
   - Various facilities and ideas for things to do are available in the Google Maps window once the user selects a specific city. More specific detail
   is made available once the user selects a specific hotel to view
   - The ability to connect with a live representative from Dan's City Breaks is not made available 
 
-2. As a site owner: 
+* User Story Testing for the Owner: 
   - The application does provide the information that can help users to decide where to travel, for their city break
   - While a number of alternative API's are available via Google Maps I believe optimal use is made of this particular API
 
-* Testing the main function of the Country and City location: 
+* The following scenario describes the manual testing process for the central feature of the Applicaiton - selecting the Country and City locations: 
   1. Click in the Country Location drop-down list to select a preferred country -> the Google Map will change accordingly
   2. Free type a preferred city for that country the the City Location data field -> this field will auto-populate
   3. Pins will drop onto the map to identify hotels in that city -> Select from within the map istelf, or from the list of hotels 
@@ -120,10 +120,10 @@ name of the hotel, the address, a contact number, a link to the hotel website, a
   4. Once any hotel is selected, a pop-up will appear for that hotel, displaying the name, address, contact information and Hotel Rating, 
   in addition to the hotel's direct web link
   5. Select the hotel name to be taken directly to a closer view of the local area. On this page: 
-    - Local facilities are easy to view and select
-    - The left-hand panel displays more information about the hotel
-    - A booking can be made directly from the left-hand panel
-    - Alternative hotel options are also listed for user reference
+      - Local facilities are easy to view and select
+      - The left-hand panel displays more information about the hotel
+      - A booking can be made directly from the left-hand panel
+      - Alternative hotel options are also listed for user reference
 
 # Deployment
 This project is hosted through GitHub Pages: https://tenerim.github.io/Milestone-2/ 
