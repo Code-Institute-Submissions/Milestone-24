@@ -11,6 +11,9 @@ country of their choice, they'll then need to free-type a City of their own part
 in the City input field, the Application offers the user some options they might not have considered, while also helping ensure the user completes that data field 
 correctly. The Application then offers hotel options via the map window, and also via a full list of available hotels immediately below the Google Maps window.  
 
+<!---Is this ok to use as the link to the live project?---->
+This project is hosted through GitHub Pages: https://tenerim.github.io/Milestone-2/ 
+
 # UX
 I designed the web site with the experienced traveler in mind - someone who is already familiar with travel, and is looking for an easy way to finding hotel 
 options, with things to do in a local area during a City break. 
@@ -27,24 +30,36 @@ Specific User Stories for this project are:
   - Provide a user-friendly web-site that helps users to decide where to travel for their City Break 
   - Make optimal use of the Google Maps API and the functionality available to site owners and to users  
 
-The following wireframes provide the insight and logic into the design and purpose of the site: 
+The following wireframes provide the insight and logic into the design and purpose of the site [mock-ups] (https://github.com/tenerim/Milestone-2/blob/d78928c34db959f0c286267eb92c5f9d5eabdf15/assets/Wireframes)
 
-1. https://github.com/tenerim/Milestone-2/blob/9abe9bfc013e4fe0c7bb6ecf0191ccc4ea05d796/assets/Wireframes/WF%20Page%201.JPG 
-  - The opening page is simple yet informative. It provides the user with an immediate and simple view with instructions on what 
+1. The opening page is simple yet informative. It provides the user with an immediate and simple view with instructions on what 
   the user needs to do to 'choose from a wide selection of popular City locations'.
-2. https://github.com/tenerim/Milestone-2/blob/9abe9bfc013e4fe0c7bb6ecf0191ccc4ea05d796/assets/Wireframes/WF%20Page%202.JPG
-  - Page 2 offers a list of the hotel options available to the user - this assumes the user is already familiar with the area and might prefer to 
+2. Page 2 offers a list of the hotel options available to the user - this assumes the user is already familiar with the area and might prefer to 
   select from the drop-down list, rather than search for any one particular hotel from the map window in Page 1. 
-3. https://github.com/tenerim/Milestone-2/blob/9abe9bfc013e4fe0c7bb6ecf0191ccc4ea05d796/assets/Wireframes/WF%20Page%203.JPG
-  - Page 3 offers a number of direct contact options from around the world, along with Social Links, providing the user with options to contact a representative
+3. Page 3 offers a number of direct contact options from around the world, along with Social Links, providing the user with options to contact a representative
   of Dan's City Breaks directly. 
 
 # Features
-* Feature 1 - The primary feature of the site is that is allows users to openly select country options from the drop-down list in the left window, while
-helping them with the auto-population feature when selecting City options in the right window.
-* Feature 2 - The availability of the Google Maps window and the ease with which the user can view the georgraphic location of each City
-* Feature 3 - The list of hotels within each City that's selected by the user
-* Feature 4 - The information available within the Google Map window, with regards to the City that's been selected by the user 
+<!-----An opening paragraph with context has been added here, and the features re-worked-------->
+
+* The primary purpose of the site is to allow the user to select country options for city breaks while helping them to then select city options 
+through a separate free-type data field. The availability of the Google Maps window and the ease with which the user can view the georgraphic location 
+of each city via that window is a particularly strong feature of the project. Once a hotel has been selected, the user is then provided with another layer of 
+information with regards to the amenities surrounding the hotel (and within their city of choice).   
+
+More specific features are that the Application: 
+1. The drop-down data field allows the user to choose from a select number of country options immediately above the Google Maps window.
+2. The free-type data field auto-populates with the city options available for the country they've selected. 
+3. A complete list of hotel options appears within the Google Map window from where the user can select a specific hotel by clicking
+on the hotel pin. 
+4. That same list appears in a table format below the Google Maps window, which can be used by the user as an alternative method for selecting 
+their hotel of choice. 
+5. A pop-up bubble appears within Google Maps once the use has selected a particular hotel. This pop-up includes key information such as the 
+name of the hotel, the address, a contact number, a link to the hotel website, and the hotel rating. 
+6. Clicking on the name of the hotel takes the user to a more detailed Google Maps page, with additonal features / options including: 
+  - Hotel availability and pricing options in the left browser panel
+  - Local area information regarding the area immediately surrounding the hotel, also in the left browser panel
+  - An area map wihtin the main browser window of the city and key amenities / attractions 
 
 ## Additional (future) features might include:
 * Links to additonal sites that offer package deals, flight information and car hire for the location selected
@@ -53,13 +68,19 @@ helping them with the auto-population feature when selecting City options in the
 * A limited drop-down list of Cities in addition to the City free-type field, should people not have a specific City location already in mind
 * Fully functioning Social Links which (for the moment) tie back to the Application page only 
 
+<!-----------Technologies Used has been updated------>
+
 # Technologies Used
-* html: the base language used to build the web-site
-* css: to simplify the format and layout of the web pages by enhancing the code in the html pages 
-* jQuery: to simplify DOM manipulation and interact with the Google Maps API
-* bootstrap (https://getbootstrap.com/): To use ready-made design templates to enhance the front-end appearance and user-experience of the web-site 
-* W3 Schools online web tutorials: https://www.w3schools.com/default.asp I found this useful when looking for alternative descriptions and solutions to bootstrap. 
-* font-awesome via the cdnjs libraries (https://cdnjs.com/libraries/font-awesome): To support the 'Social' links in the footer 
+* [html] (https://en.wikipedia.org/wiki/HTML) 
+  - the base language used to build the web-site
+* [css3] (https://en.wikipedia.org/wiki/Cascading_Style_Sheets) 
+  - to simplify the format and layout of the web pages by enhancing the code in the html pages 
+* [jQuery] (https://jquery.com/)
+  - to simplify DOM manipulation and interact with the Google Maps API
+* [Bootstrap] (https://getbootstrap.com/)
+  - To use ready-made design templates to enhance the front-end appearance and user-experience of the web-site 
+* [font-awesome] (https://cdnjs.com/libraries/font-awesome)
+  - Selected from the cdnjs libraries to support the 'Social' links in the footer of the Application 
 
 # Testing
 * The following web sites were used to validate my code: 
