@@ -11,8 +11,7 @@ country of their choice, the user then needs to free-type a city of their own pa
 in the data field, the Application autopopulates helping to ensure the user completes that data field correctly. The Application then offers hotel options via the map window, 
 and also via a full list of available hotels immediately below the Google Maps window.  
 
-<!---Is this ok to use as the link to the live project?---->
-This project is hosted through GitHub Pages: https://tenerim.github.io/Milestone-2/ 
+This project is hosted through GitHub Pages. Please click on this link to view: [Dan's City Breaks](https://tenerim.github.io/Milestone-2/) 
 
 # UX
 I designed the web site with the experienced traveler in mind - someone who is already familiar with travel, and who is looking for an easy way to finding hotel 
@@ -30,7 +29,8 @@ Specific User Stories for this project are:
   - Provide a user-friendly Application that helps users to decide where to travel for their city break 
   - Make optimal use of the Google Maps API and the functionality available to site owners and to users  
 
-The following wireframes provide the insight and logic into the design and purpose of the site: [mock-ups](https://github.com/tenerim/Milestone-2/blob/d78928c34db959f0c286267eb92c5f9d5eabdf15/assets/Wireframes)
+I used [balsamiq](https://balsamiq.com/) to design my mock-ups. These provide the insight and logic into the design and purpose of the Application. Please click on the following link to view the 
+mock-ups: [mock-ups](https://github.com/tenerim/Milestone-2/blob/bda0a6fa145fd69ce37dc9c50e7ca02b9fba1e1f/assets/MockUps).
 
 1. The opening page provides the user with an immediate and simple view with instructions on what the user needs to do to 'choose from a wide selection of popular city locations'.
 2. Page 2 offers a list of the hotel options available to the user - this assumes the user is already familiar with the area and may prefer to 
@@ -39,9 +39,8 @@ The following wireframes provide the insight and logic into the design and purpo
   of Dan's City Breaks directly.
 
 # Features
-<!-----An opening paragraph with context has been added here, and the features re-worked-------->
-* The primary purpose of the site is to allow the user to select country options for city breaks while helping them to then select city options 
-through a separate free-type data field. The availability of the Google Maps window and the ease with which the user can view the georgraphic location 
+The primary purpose of the Application is to allow the user to select country options from a select list of available countries for city breaks, while helping them to then select city options 
+through a separate free-type data field. The availability of the Google Maps window and the ease with which the user can view the geographic location 
 of each city via that window is a particularly strong feature of the project. Once a hotel has been selected, the user is then provided with another layer of 
 information with regards to the amenities surrounding the hotel, and within their city of choice.   
 
@@ -55,18 +54,16 @@ their hotel of choice.
 5. A pop-up bubble appears within Google Maps once the use has selected a particular hotel. This pop-up includes the followin information:  
 name of the hotel; the address and contact number for the hotel; a link to the hotel website; and the hotel rating. 
 6. Clicking on the name of the hotel takes the user to a more detailed Google Maps page, with additonal features / options including: 
-  - Hotel availability and pricing in the left browser panel
-  - Local information regarding the area immediately surrounding the hotel also in the left browser panel
-  - An area map of the city within the main browser window including key amenities / attractions 
+    - Hotel availability and pricing in the left browser panel
+    - Local information for the area immediately surrounding the hotel, also in the left browser panel
+    - An area map of the city within the main browser window including key amenities / attractions 
 
 ## Additional (future) features might include:
 * Links to additonal sites that offer package deals flight information and car hire options for the location selected
-* Additional country and city options by continent 
-* User feedback from people who have used the site 
+* All country options would be made available and displayed by continent 
 * A drop-down list of a limited number of preferred cities selected by Dan's City Breaks - this would be in addition to the city free-type field which would remain
 * Fully functioning Social Links which (for the moment) tie back to the Application page only 
-
-<!-----------Technologies Used has been updated------>
+* User feedback from people who have used the site 
 
 # Technologies Used
 * [html](https://en.wikipedia.org/wiki/HTML) 
@@ -81,12 +78,13 @@ name of the hotel; the address and contact number for the hotel; a link to the h
   - Selected from the cdnjs libraries to support the 'Social' links in the footer of the Application 
 
 # Testing
-* The following web sites were used to validate my code: 
-  - [W3C-HTML](https://validator.w3.org/) to test and validate my html file 
-  - [W3C-CSS](https://jigsaw.w3.org/css-validator/#validate_by_input) to test and validate by css file
-<!--------Would be great if we could take a look at the HTML results together------->
-<!--------Can I test my JS code anywhere?---------->
-<!--------How can I use Jasmine (if at all) to test my code?------> 
+Multiple tests were completed to support the Application. Details of Manual testing, User Story testing, and Process testing 
+are document below.
+
+In addition, a table containing the results of tests completed across various criteria can be found in the following link: 
+[Testing](https://github.com/tenerim/Milestone-2/blob/bda0a6fa145fd69ce37dc9c50e7ca02b9fba1e1f/assets/Testing/Testing%20Matrix.JPG)
+
+External mark up validation services were also used to test the integrity of html and css code. 
 
 * The following tests were manual, specifically:  
   - Each page was reloaded every time a new section was completed
@@ -108,34 +106,46 @@ name of the hotel; the address and contact number for the hotel; a link to the h
   - The application provides the information that can help users to decide where to travel for their city break
   - While a number of alternative API's are available via Google Maps I believe optimal use is made of this particular API
 
-* The following scenario describes the manual testing process for the central feature of the Applicaiton - selecting the Country and City locations: 
-  1. Click in the Country Location drop-down list to select a preferred country - the Google Map will change accordingly.
+* The following scenario describes the manual testing process for the central feature of the Applicaiton - the selection of the country and city locations: 
+  1. Click in the Country Location drop-down list to select a preferred country - the Google Map image will change accordingly.
   2. Free-type a preferred city for that country in the City Location data field - this field will auto-populate.
-  3. Pins will drop onto the map to identify hotels in that city - the user can select from within the map istelf or from the list of hotels that are then made available beneath the image of Venice.
+  3. Pins will drop onto the map to identify hotels in that city - the user can select from within the map istelf or from the list of hotels that are then made available beneath the Map.
   4. Once any hotel is selected a pop-up will appear for that hotel displaying the name, address, contact information and Hotel Rating, in addition to the hotel's direct web link.
   5. Select the hotel name to be taken directly to a closer view of the local area. On this page: 
-      - Local facilities are easy to view and select
-      - The left-hand panel displays more information about the hotel
-      - A booking can be made directly from the left-hand panel
+      - Local facilities immediately surrounding the hotel will appear and the user will be to view and select these as preferred
+      - The left panel displays more information about the hotel
+      - A hotel booking can be made directly from that panel 
       - Alternative hotel options are also listed for user reference
 
+* The following web sites were used to validate my code: 
+
+  - [W3C-HTML](https://validator.w3.org/) to test and validate my html file 
+  - [W3C-CSS](https://jigsaw.w3.org/css-validator/#validate_by_input) to test and validate my css file
+
 # Deployment
-This project is hosted through GitHub Pages: https://tenerim.github.io/Milestone-2/ 
+Dan's City Breaks was developed on GitPod, with the repository hosted on GitHub and GitHub Pages.
 
-<!--------Process I followed to deploy the project to a hosting platform?----------> 
-
-All code is saved to the following repository in GitHub: https://github.com/tenerim/Milestone-2 
+## To deploy the project using GitHub Pages:
+1. Navigate to the project via the following link: https://github.com/tenerim/Milestone-2.
+2. In the navigation bar select the last option available ('settings').
+3. Scroll down to the GitHub pages area.
+4. Select 'Master Branch' from the 'Source' dropdown menu.
+5. Select the option titled 'master branch - Use the master branch for GitHub Pages'.
+6. The project should now be available via GitHub Pages. 
 
 There are no differences between the deployed version and the development version. 
 
-<!--------Should I explain how to run the code locally?----------> 
+## To deploy the project locally:
+1. Navigate to the project via the following link: https://github.com/tenerim/Milestone-2.
+2. Click the green 'Clone or Download' button. 
+3. Copy the URL that appears in the drop-down box. 
+4. Paste the URL into any locally preferred IDE platform. 
+5. The project will now be available via the local platform.  
 
 # Credits
-* Footer
-  - The content for this section was taken from the footer of the 'My Resume' project (the 'Mini Project with Bootstrap 4')
+* Content
+  - The content for the footer section was taken from the footer of the [My Resume](https://github.com/tenerim/resume) project, completed during the User Centric Frontend Development Module of the Course. 
 * Media
-  - The photos used in this site, includeing the backdrop of the Golden Gate Bridge, were obtained from [Coverr](https://coverr.co/search?q=city).
-* Icons
-  - The icons used in this site were taken from fontawesome.com 
+  - The photos used in this site, including the backdrop of the Golden Gate Bridge, were obtained from [Coverr](https://coverr.co/search?q=city).
 * Acknowledgements
-  - I received inspiration for this project from my family with support and coaching provided by Precious Ijege
+  - I received inspiration for this project from my family with support and coaching provided by my Mentor [Precious Ijege](https://github.com/precious-ijege/).

@@ -8,6 +8,10 @@ body {
 
 }
 
+
+.heading {  text-align: center;
+}
+
 section {
     padding-top: 10px;
     padding-bottom: 10px
@@ -23,6 +27,13 @@ h6 {    max-width: 240px;
         color: whitesmoke;
 }
 
+.findhotels {    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#listing {    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 
 #map {height: 550px;
@@ -31,7 +42,7 @@ h6 {    max-width: 240px;
     padding-bottom: 10px
 }
 
-#pics {    padding-top: 10px;
+.pics {    padding-top: 10px;
     padding-bottom: 10px
 }
 

@@ -9,22 +9,27 @@
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-	<script src="assets/maps.js"> </script>
+	<script src="assets/JavaScript/maps.js"> </script>
+
 
 	<title>Dan's City Breaks</title>
 </head>
 
 <body>
 
-	<!------------------------------------First Page for Intro and Data Entry-->
+	<!--Intro and Data Entry-->
 
 	<section id="first-page">
-		<div class="container">
+		<div class="container-fluid">
 
 			<div class="row">
 				<div class="col-sm">
-					<h2>Welcome to Dan's City Breaks!</h2>
-					<h2>Choose from a wide selection of popular City locations....</h2>
+					<h1 class="heading">DAN'S CITY BREAKS</h1>
+					<h2 class="heading">Welcome to the city break finder of choice!</h2>
+					<h4>We help new and experienced travelers find places to stay and things to do
+						across 13 specific countries in Europe, the Americas and Australia. Let our country and city
+						finder help
+						you to do the same!</h4>
 				</div>
 			</div>
 
@@ -32,8 +37,8 @@
 				<div class="col-sm-6">
 					<div class="hotel-search">
 
-						<div id="findhotels">
-							<h4>Find hotels and things to do by selecting from the Country Location drop-down list:</h4>
+						<div class="findhotels">
+							<h4>First select a country from the Country Location list:</h4>
 						</div>
 
 						<div id="controls">
@@ -60,8 +65,8 @@
 				<div class="col-sm-6">
 					<div class="hotel-search">
 
-						<div id="findhotels">
-							<h4>Then free-type your preferred City Location:</h4>
+						<div class="findhotels">
+							<h4>Then type your preferred destination City Location here:</h4>
 						</div>
 
 						<div id="locationField">
@@ -77,29 +82,22 @@
 			<div class="container">
 
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-sm">
 						<div id="map"></div>
 					</div>
-
-					<div class="col-sm-6">
-						<div id="pic-master">
-							<img src="assets/images/Venice.PNG" style="width:100%; height:100%;">
-                    </div>
-						</div>
-					</div>
-
 				</div>
+			</div>
 	</section>
 
-	<!------------------------------------Second Page for Results Table-->
+	<!--Results Table-->
 
 	<section id="second-page">
-		<div class="container-fluid">
+		<div class="container">
 
 			<div class="row">
 				<div class="col-sm">
 
-					<h4 style="color: whitesmoke">Once your City has been entered, please select from the hotel options
+					<h4 style="color: whitesmoke">Once your city has been entered, please select from the hotel options
 						listed below, or directly
 						from the map above...</h4>
 
@@ -139,21 +137,20 @@
 			</div>
 		</div>
 
-	<!----------------------Scripts for API------>
-
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9uOTpoDFNPOCFsW8K8KVLsDSnxE395h0&libraries=places&callback=initMap"
-			async defer>
-		</script>
+		<!--Scripts for API-->
 
 		<script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js">
 			var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 		</script>
 
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9uOTpoDFNPOCFsW8K8KVLsDSnxE395h0&libraries=places&callback=initMap">
+		</script>
+
 	</section>
 
-	<!----------------------Contact Section------>
+	<!--Contacts-->
 
 	<Section id="contacts">
 
@@ -168,48 +165,49 @@
 
 			<div class="row">
 				<div class="col-sm">
-					<div id="pics">
-						<img src="assets/images/New_York1.PNG" style="width:100%; height:100%;">
+					<div class="pics">
+						<img src="assets/images/New_York1.PNG" style="width:100%; height:100%;" alt="New York">
 						<h6>New York
 							<br>USA
-							<br>Tel #.
-							<br>Web address.</h6>
+							<br>Tel +1-555-2126-298
+							<br>www.DCBreaks.com</h6>
 					</div>
 				</div>
 
 				<div class="col-sm">
-					<div id="pics">
-						<img src="assets/images/Paris3.PNG" style="width:100%; height:100%;">
+					<div class="pics">
+						<img src="assets/images/Paris3.PNG" style="width:100%; height:100%;" alt="Paris">
 						<h6>Paris
 							<br>France
-							<br>Tel #.
-							<br>Web address.</h6>
+							<br>Tel +33-775-5556-30
+							<br>www.DCBreaks.fr</h6>
 					</div>
 				</div>
 
 				<div class="col-sm">
-					<div id="pics">
-						<img src="assets/images/London1.PNG" style="width:100%; height:100%;">
+					<div class="pics">
+						<img src="assets/images/London1.PNG" style="width:100%; height:100%;" alt="London">
 						<h6>London
 							<br>England
-							<br>Tel #.
-							<br>Web address.</h6>
+							<br>Tel +44-715-5592-515
+							<br>www.DCBreaks.co.uk</h6>
 					</div>
 				</div>
 
 				<div class="col-sm">
-					<div id="pics">
-						<img src="assets/images/Australia3.PNG" style="width:100%; height:100%;">
+					<div class="pics">
+						<img src="assets/images/Australia3.PNG" style="width:100%; height:100%;" alt="Sydney">
 						<h6>Sydney
 							<br>Australia
-							<br>Tel #.
-							<br>Web address.</h6>
+							<br>Tel +61-455-5760-82
+							<br>www.DCBreaks.au</h6>
 					</div>
 				</div>
 			</div>
+		</div>
 	</Section>
 
-	<!----------------------Footer Section------>
+	<!--Footer-->
 
 	<Section id="footer">
 		<div class="container-fluid">
@@ -256,7 +254,7 @@
 					</ul>
 				</div>
 			</div>
-
+		</div>
 	</Section>
 
 </body>
