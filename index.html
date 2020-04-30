@@ -1,262 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-	<script src="assets/JavaScript/maps.js"> </script>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+      <script src="assets/JavaScript/maps.js"> </script>
+      <title>Dan's City Breaks</title>
+   </head>
 
+   <body>
 
-	<title>Dan's City Breaks</title>
-</head>
+      <!--Intro and Data Entry-->
+      <section id="first-page">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm">
+                  <h1 class="heading1">DAN'S CITY BREAKS</h1>
+                  <h1 class="heading2">Welcome to the city break finder of choice!</h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="hotel-search">
+                     <div class="findhotels">
+                        <h4>We help new and experienced travelers find places to stay and things to do
+                           across 13 specific countries in Europe, the Americas and Australia. 
+                        </h4>
+                        <h4>Let our country and city finder help you to do the same!</h4>
+                        <h4>First select a country from the Country Location list:</h4>
+                     </div>
+                     <div id="controls">
+                        <select id="country">
+                           <option value="all">All</option>
+                           <option value="au">Australia</option>
+                           <option value="br">Brazil</option>
+                           <option value="ca">Canada</option>
+                           <option value="fr">France</option>
+                           <option value="de">Germany</option>
+                           <option value="mx">Mexico</option>
+                           <option value="nz">New Zealand</option>
+                           <option value="it">Italy</option>
+                           <option value="za">South Africa</option>
+                           <option value="es">Spain</option>
+                           <option value="pt">Portugal</option>
+                           <option value="us" selected>U.S.A.</option>
+                           <option value="uk">United Kingdom</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="hotel-search">
+                     <div class="findhotels">
+                        <h4>Then type your preferred destination City Location here:</h4>
+                     </div>
+                     <div id="locationField">
+                        <input id="autocomplete" placeholder="Enter a City" type="text" />
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6">
+                  <div id="map"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <!--Results Table-->
+      <section id="second-page">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm">
+                  <h4>Once your city has been entered, please select from the hotel options listed below, or directly from the map above...
+                  </h4>
+                  <div id="listing">
+                     <table id="resultsTable">
+                        <tbody id="results"></tbody>
+                     </table>
+                  </div>
+                  <div style="display: none">
+                     <div id="info-content">
+                        <table>
+                           <tr id="iw-url-row" class="iw_table_row">
+                              <td id="iw-icon" class="iw_table_icon"></td>
+                              <td id="iw-url"></td>
+                           </tr>
+                           <tr id="iw-address-row" class="iw_table_row">
+                              <td class="iw_attribute_name">Address:</td>
+                              <td id="iw-address"></td>
+                           </tr>
+                           <tr id="iw-phone-row" class="iw_table_row">
+                              <td class="iw_attribute_name">Telephone:</td>
+                              <td id="iw-phone"></td>
+                           </tr>
+                           <tr id="iw-rating-row" class="iw_table_row">
+                              <td class="iw_attribute_name">Rating:</td>
+                              <td id="iw-rating"></td>
+                           </tr>
+                           <tr id="iw-website-row" class="iw_table_row">
+                              <td class="iw_attribute_name">Website:</td>
+                              <td id="iw-website"></td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Scripts for API-->
+         <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js">
+            var markerCluster = new MarkerClusterer(map, markers,
+                     {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+         </script>
+         <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9uOTpoDFNPOCFsW8K8KVLsDSnxE395h0&libraries=places&callback=initMap"></script>
+      </section>
+      
+      <!--Contacts-->
+      <Section id="contacts">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm">
+                  <h4>Please contact our offices directly at any time to find out more...
+                  </h4>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm">
+                  <div class="pics">
+                     <img src="assets/images/New_York1.PNG" style="width:100%; height:100%;" alt="New York">
+                     <h6>New York
+                        <br>USA
+                        <br>Tel +1-555-2126-298
+                        <br>www.DCBreaks.com
+                     </h6>
+                  </div>
+               </div>
+               <div class="col-sm">
+                  <div class="pics">
+                     <img src="assets/images/Paris3.PNG" style="width:100%; height:100%;" alt="Paris">
+                     <h6>Paris
+                        <br>France
+                        <br>Tel +33-775-5556-30
+                        <br>www.DCBreaks.fr
+                     </h6>
+                  </div>
+               </div>
+               <div class="col-sm">
+                  <div class="pics">
+                     <img src="assets/images/London1.PNG" style="width:100%; height:100%;" alt="London">
+                     <h6>London
+                        <br>England
+                        <br>Tel +44-715-5592-515
+                        <br>www.DCBreaks.co.uk
+                     </h6>
+                  </div>
+               </div>
+               <div class="col-sm">
+                  <div class="pics">
+                     <img src="assets/images/Australia3.PNG" style="width:100%; height:100%;" alt="Sydney">
+                     <h6>Sydney
+                        <br>Australia
+                        <br>Tel +61-455-5760-82
+                        <br>www.DCBreaks.au
+                     </h6>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </Section>
+      
+      <!--Footer-->
+      <Section id="footer">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm">
+                  <h4>Social</h4>
+                  <ul class="list-inline social-links">
+                     <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                        </a>
+                     </li>
+                     <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">twitter</span>
+                        </a>
+                     </li>
+                     <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <span class="sr-only">LinkedIn</span>
+                        </a>
+                     </li>
+                     <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                        <span class="sr-only">Pinterest</span>
+                        </a>
+                     </li>
+                     <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span class="sr-only">Instagram</span>
+                        </a>
+                     </li>
+                     <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                        <span class="sr-only">YouTube</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </Section>
 
-<body>
-
-	<!--Intro and Data Entry-->
-
-	<section id="first-page">
-		<div class="container-fluid">
-
-			<div class="row">
-				<div class="col-sm">
-					<h1 class="heading">DAN'S CITY BREAKS</h1>
-					<h2 class="heading">Welcome to the city break finder of choice!</h2>
-					<h4>We help new and experienced travelers find places to stay and things to do
-						across 13 specific countries in Europe, the Americas and Australia. Let our country and city
-						finder help
-						you to do the same!</h4>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="hotel-search">
-
-						<div class="findhotels">
-							<h4>First select a country from the Country Location list:</h4>
-						</div>
-
-						<div id="controls">
-							<select id="country">
-          <option value="all">All</option>
-          <option value="au">Australia</option>
-          <option value="br">Brazil</option>
-          <option value="ca">Canada</option>
-          <option value="fr">France</option>
-          <option value="de">Germany</option>
-          <option value="mx">Mexico</option>
-          <option value="nz">New Zealand</option>
-          <option value="it">Italy</option>
-          <option value="za">South Africa</option>
-          <option value="es">Spain</option>
-          <option value="pt">Portugal</option>
-          <option value="us" selected>U.S.A.</option>
-          <option value="uk">United Kingdom</option>
-                </select>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6">
-					<div class="hotel-search">
-
-						<div class="findhotels">
-							<h4>Then type your preferred destination City Location here:</h4>
-						</div>
-
-						<div id="locationField">
-							<input id="autocomplete" placeholder="Enter a City" type="text" />
-						</div>
-
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="container">
-
-				<div class="row">
-					<div class="col-sm">
-						<div id="map"></div>
-					</div>
-				</div>
-			</div>
-	</section>
-
-	<!--Results Table-->
-
-	<section id="second-page">
-		<div class="container">
-
-			<div class="row">
-				<div class="col-sm">
-
-					<h4 style="color: whitesmoke">Once your city has been entered, please select from the hotel options
-						listed below, or directly
-						from the map above...</h4>
-
-					<div id="listing">
-						<table id="resultsTable">
-							<tbody id="results"></tbody>
-						</table>
-					</div>
-
-					<div style="display: none">
-						<div id="info-content">
-							<table>
-								<tr id="iw-url-row" class="iw_table_row">
-									<td id="iw-icon" class="iw_table_icon"></td>
-									<td id="iw-url"></td>
-								</tr>
-								<tr id="iw-address-row" class="iw_table_row">
-									<td class="iw_attribute_name">Address:</td>
-									<td id="iw-address"></td>
-								</tr>
-								<tr id="iw-phone-row" class="iw_table_row">
-									<td class="iw_attribute_name">Telephone:</td>
-									<td id="iw-phone"></td>
-								</tr>
-								<tr id="iw-rating-row" class="iw_table_row">
-									<td class="iw_attribute_name">Rating:</td>
-									<td id="iw-rating"></td>
-								</tr>
-								<tr id="iw-website-row" class="iw_table_row">
-									<td class="iw_attribute_name">Website:</td>
-									<td id="iw-website"></td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!--Scripts for API-->
-
-		<script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js">
-			var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-		</script>
-
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9uOTpoDFNPOCFsW8K8KVLsDSnxE395h0&libraries=places&callback=initMap">
-		</script>
-
-	</section>
-
-	<!--Contacts-->
-
-	<Section id="contacts">
-
-		<div class="container-fluid">
-
-			<div class="row">
-				<div class="col-sm">
-					<h4 style="color: whitesmoke">Please contact our offices directly at any time to find out more...
-					</h4>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-sm">
-					<div class="pics">
-						<img src="assets/images/New_York1.PNG" style="width:100%; height:100%;" alt="New York">
-						<h6>New York
-							<br>USA
-							<br>Tel +1-555-2126-298
-							<br>www.DCBreaks.com</h6>
-					</div>
-				</div>
-
-				<div class="col-sm">
-					<div class="pics">
-						<img src="assets/images/Paris3.PNG" style="width:100%; height:100%;" alt="Paris">
-						<h6>Paris
-							<br>France
-							<br>Tel +33-775-5556-30
-							<br>www.DCBreaks.fr</h6>
-					</div>
-				</div>
-
-				<div class="col-sm">
-					<div class="pics">
-						<img src="assets/images/London1.PNG" style="width:100%; height:100%;" alt="London">
-						<h6>London
-							<br>England
-							<br>Tel +44-715-5592-515
-							<br>www.DCBreaks.co.uk</h6>
-					</div>
-				</div>
-
-				<div class="col-sm">
-					<div class="pics">
-						<img src="assets/images/Australia3.PNG" style="width:100%; height:100%;" alt="Sydney">
-						<h6>Sydney
-							<br>Australia
-							<br>Tel +61-455-5760-82
-							<br>www.DCBreaks.au</h6>
-					</div>
-				</div>
-			</div>
-		</div>
-	</Section>
-
-	<!--Footer-->
-
-	<Section id="footer">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm">
-					<h4 style="color: whitesmoke">Social</h4>
-					<ul class="list-inline social-links">
-						<li class="list-inline-item">
-							<a target="_blank" href="#">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-								<span class="sr-only">Facebook</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="#">
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-								<span class="sr-only">twitter</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="#">
-								<i class="fa fa-linkedin" aria-hidden="true"></i>
-								<span class="sr-only">LinkedIn</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="#">
-								<i class="fa fa-pinterest" aria-hidden="true"></i>
-								<span class="sr-only">Pinterest</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="#">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-								<span class="sr-only">Instagram</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="#">
-								<i class="fa fa-youtube" aria-hidden="true"></i>
-								<span class="sr-only">YouTube</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</Section>
-
-</body>
-
+   </body>
+   
 </html>

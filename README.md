@@ -1,69 +1,72 @@
-# Project Name: 
-Milestone Project 2 - Dan's City Breaks
+# Milestone Project 2 - Dan's City Breaks
 
-Dan's City Breaks provides an interactive, practal, meaningful and helpful user experience for anyone looking to take a city break across a number 
-of global locations. Together with our network of partners located around the world, we've carefully selected only the best and most popular countries to visit. 
-We've then identified cities where our users could choose to stay, with hotels and areas of interest all available to view and to select via our 
-Application which is available through the user's web browser and other platforms.
+Dan's City Breaks provides an interactive, practical, meaningful and helpful user experience for anyone looking to take a city break across several global locations. 
+Together with our network of partners located around the world, we have carefully selected only the best and most popular countries to visit. 
+Cities are made available to view via the Google Maps window, with hotels and areas of interest available to select via our Application which
+ can be accessed through the user's web browser and other platforms.
 
-The Google Maps window provides a very 'real' context through which the user can get a sense of exactly where they'll be staying. By first selecting the
-country of their choice, the user then needs to free-type a city of their own particular interest. Once the user starts to free-type their preferred city location
-in the data field, the Application autopopulates helping to ensure the user completes that data field correctly. The Application then offers hotel options via the map window, 
-and also via a full list of available hotels immediately below the Google Maps window.  
+The Google Maps window provides a very 'real' context through which the user can get a sense of exactly where they will be staying. 
+By first selecting the country of their choice, the user then needs to free-type a city of their own interest. 
+Once the user starts to free-type their preferred city location in the data field, the Application auto populates helping to ensure 
+the user completes that data field correctly. 
+The Application then offers hotel options via the Google Maps window. 
+This information is also presented in a table format immediately below the Google Map.  
 
-This project is hosted through GitHub Pages. Please click on this link to view: [Dan's City Breaks](https://tenerim.github.io/Milestone-2/) 
+This project is hosted through GitHub Pages. 
+Please click on this link to view: [Dan's City Breaks](https://tenerim.github.io/Milestone-2/).
 
 # UX
-I designed the web site with the experienced traveler in mind - someone who is already familiar with travel, and who is looking for an easy way to finding hotel 
+I designed the Application with the experienced traveler in mind - someone who is already familiar with travel, and who is looking for an easy way to finding hotel 
 options, with things to do in a local area during a city break. 
+At the same time, I wanted to ensure it was user friendly enough for someone not so experienced in searching for city breaks.
 
 Specific User Stories for this project are:
 
 * As a site user:
   - Easily and quickly select a number of country locations as options / places to visit
-  - To be able to choose from a number of hotels in an area they are interested in traveling to
+  - To be able to choose from a number of hotels in an area the user is interested in traveling to
   - To identify various things to do and places to go in that city
-  - To be able to connect directly with someone from the Dan's City Breaks web-site to discuss options and ask questions directly if necessary
+  - To be able to connect directly with someone from the Dan's City Breaks website to discuss options and ask questions directly if necessary
 
 * As a site owner: 
   - Provide a user-friendly Application that helps users to decide where to travel for their city break 
   - Make optimal use of the Google Maps API and the functionality available to site owners and to users  
 
 I used [balsamiq](https://balsamiq.com/) to design my mock-ups. These provide the insight and logic into the design and purpose of the Application. Please click on the following link to view the 
-mock-ups: [mock-ups](https://github.com/tenerim/Milestone-2/blob/bda0a6fa145fd69ce37dc9c50e7ca02b9fba1e1f/assets/MockUps).
+mock-ups: [mock-ups](https://github.com/tenerim/Milestone-2/tree/master/assets/MockUps).
 
-1. The opening page provides the user with an immediate and simple view with instructions on what the user needs to do to 'choose from a wide selection of popular city locations'.
-2. Page 2 offers a list of the hotel options available to the user - this assumes the user is already familiar with the area and may prefer to 
-  select from the drop-down list, rather than search for any one particular hotel from the map window.
-3. Page 3 offers a number of direct contact options from around the world, along with Social Links, providing the user with options to contact a representative
-  of Dan's City Breaks directly.
+1. The opening page provides the user with an immediate and simple view with instructions on what the user needs to do to
+ 'choose from a wide selection of popular city locations'.
+2. Page 2 offers a list of the hotel options available to the user - this assumes the user is already familiar with the 
+area and may prefer to select from the drop-down list, rather than search for any one hotel from the map window.
+3. Page 3 offers several direct contact options from around the world, along with Social Links, providing the user with 
+options to contact a representative from Dan’s City Breaks.
+
 
 # Features
-The primary purpose of the Application is to allow the user to select country options from a select list of available countries for city breaks, while helping them to then select city options 
+The primary purpose of the Application is to allow the user to select country options from a set list of available countries for city breaks, while helping them to then select city options 
 through a separate free-type data field. The availability of the Google Maps window and the ease with which the user can view the geographic location 
-of each city via that window is a particularly strong feature of the project. Once a hotel has been selected, the user is then provided with another layer of 
+of each city via that window, is a particularly strong feature of the project. Once a hotel has been selected, the user is then provided with another layer of 
 information with regards to the amenities surrounding the hotel, and within their city of choice.   
 
 Specific features of the Application are noted immediately below: 
 1. The drop-down data field allows the user to choose from a select number of country options immediately above the Google Maps window.
-2. The free-type data field auto-populates with the city options available for the country they've selected. 
-3. A complete list of hotel options appears within the Google Map window from where the user can select a specific hotel by clicking
-on the hotel pin. 
-4. That same list appears in a table format below the Google Maps window, which can be used by the user as an alternative method for selecting 
-their hotel of choice. 
-5. A pop-up bubble appears within Google Maps once the use has selected a particular hotel. This pop-up includes the followin information:  
+2. The free-type data field auto-populates with the city options available for the selected country. 
+3. A complete list of hotel options appears within the Google Map window from where the user can select a specific hotel by clicking on the hotel pin. 
+4. That same list appears in a table format below the Google Maps window, which can be used by the user as an alternative method for selecting their hotel of choice. 
+5. A pop-up bubble appears within Google Maps once the user has selected a particular hotel. This pop-up includes the following information:  
 name of the hotel; the address and contact number for the hotel; a link to the hotel website; and the hotel rating. 
-6. Clicking on the name of the hotel takes the user to a more detailed Google Maps page, with additonal features / options including: 
-    - Hotel availability and pricing in the left browser panel
-    - Local information for the area immediately surrounding the hotel, also in the left browser panel
-    - An area map of the city within the main browser window including key amenities / attractions 
+6. Clicking on the name of the hotel takes the user to a more detailed Google Maps page, with additional features and options including: 
+    - Hotel availability and pricing in a separate browser panel
+    - Local information for the area immediately surrounding the hotel, also in the separate panel
+    - An area map of the city within the main browser window including key amenities and attractions 
 
 ## Additional (future) features might include:
-* Links to additonal sites that offer package deals flight information and car hire options for the location selected
+* Links to additional sites that offer package deals, flight information and car hire options for the location selected
 * All country options would be made available and displayed by continent 
 * A drop-down list of a limited number of preferred cities selected by Dan's City Breaks - this would be in addition to the city free-type field which would remain
 * Fully functioning Social Links which (for the moment) tie back to the Application page only 
-* User feedback from people who have used the site 
+* User feedback from people who have used the site previously
 
 # Technologies Used
 * [html](https://en.wikipedia.org/wiki/HTML) 
@@ -73,16 +76,16 @@ name of the hotel; the address and contact number for the hotel; a link to the h
 * [jQuery](https://jquery.com/)
   - to simplify DOM manipulation and interact with the Google Maps API
 * [Bootstrap](https://getbootstrap.com/)
-  - To use ready-made design templates to enhance the front-end appearance and user-experience of the web-site 
+  - to use ready-made design templates to enhance the front-end appearance and user-experience of the web-site 
 * [font-awesome](https://cdnjs.com/libraries/font-awesome)
-  - Selected from the cdnjs libraries to support the 'Social' links in the footer of the Application 
+  - selected from the cdnjs libraries to support the 'Social' links in the footer of the Application 
 
 # Testing
 Multiple tests were completed to support the Application. Details of Manual testing, User Story testing, and Process testing 
 are document below.
 
-In addition, a table containing the results of tests completed across various criteria can be found in the following link: 
-[Testing](https://github.com/tenerim/Milestone-2/blob/bda0a6fa145fd69ce37dc9c50e7ca02b9fba1e1f/assets/Testing/Testing%20Matrix.JPG)
+In addition, a table containing the results of tests completed across various criteria can be found in the following
+ [link](https://github.com/tenerim/Milestone-2/tree/master/assets/Testing). 
 
 External mark up validation services were also used to test the integrity of html and css code. 
 
@@ -91,29 +94,27 @@ External mark up validation services were also used to test the integrity of htm
   - The Application was then reviewed in all available mobile views
   - Any errors or inconsistencies were corrected by adjusting for the column widths within each container
   - This also ensured the text aligned appropriately for the screen size chosen
-  - On a smaller screen size the Google Maps window and the picture of Venice sit on top of each other - ensuring the user is still able to see a full screen size of the map on their device
   - All images are coded to fit the full width of the screen on any mobile device and to sit side-by-side on a larger device
   - The Social links in the footer tie back to the Application page (as currently intended) and the colour of each changes as appropriate when hovered over.
-  - The four 'local offices' have telephone numbers and web addresses intentionally left blank
 
 * User Story Testing for the User: 
-  - The user is able to quickly and easily select from a number of country locations and choose from various hotels in an area they are interested in traveling to
+  - The user can quickly and easily select from several country locations and choose from various hotels in an area they are interested in traveling to
   - Various facilities and ideas for things to do are available in the Google Maps window once the user selects a specific city 
   - More specific detail is made available once the user selects a specific hotel to view
-  - Contact placeholders are included for the four offices in which Dan's City Breaks operates - so the user can connect with with a live representative as appropriate
+  - Contact information is included for the four offices in which Dan's City Breaks operates so the user can connect with a live representative as appropriate
 
 * User Story Testing for the Owner: 
   - The application provides the information that can help users to decide where to travel for their city break
-  - While a number of alternative API's are available via Google Maps I believe optimal use is made of this particular API
+  - While several alternative API's are available via Google Maps, I believe optimal use is made of this particular API
 
-* The following scenario describes the manual testing process for the central feature of the Applicaiton - the selection of the country and city locations: 
+* The following scenario describes the manual testing process for the central feature of the Application - the selection of the country and city locations: 
   1. Click in the Country Location drop-down list to select a preferred country - the Google Map image will change accordingly.
   2. Free-type a preferred city for that country in the City Location data field - this field will auto-populate.
-  3. Pins will drop onto the map to identify hotels in that city - the user can select from within the map istelf or from the list of hotels that are then made available beneath the Map.
+  3. Pins will drop onto the map to identify hotels in that city - the user can select from within the map itself or from the list of hotels that are then made available beneath the Map.
   4. Once any hotel is selected a pop-up will appear for that hotel displaying the name, address, contact information and Hotel Rating, in addition to the hotel's direct web link.
   5. Select the hotel name to be taken directly to a closer view of the local area. On this page: 
       - Local facilities immediately surrounding the hotel will appear and the user will be to view and select these as preferred
-      - The left panel displays more information about the hotel
+      - A separate panel displays more information about the hotel
       - A hotel booking can be made directly from that panel 
       - Alternative hotel options are also listed for user reference
 
@@ -146,6 +147,6 @@ There are no differences between the deployed version and the development versio
 * Content
   - The content for the footer section was taken from the footer of the [My Resume](https://github.com/tenerim/resume) project, completed during the User Centric Frontend Development Module of the Course. 
 * Media
-  - The photos used in this site, including the backdrop of the Golden Gate Bridge, were obtained from [Coverr](https://coverr.co/search?q=city).
+  - The photos used in this site were obtained from [Coverr](https://coverr.co/search?q=city).
 * Acknowledgements
   - I received inspiration for this project from my family with support and coaching provided by my Mentor [Precious Ijege](https://github.com/precious-ijege/).

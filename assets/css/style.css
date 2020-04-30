@@ -1,79 +1,108 @@
+/* page formatting */
+
 body {
-    background-color: rgb(220, 220, 220);
-    background-image: url("../images/gate.PNG");
+    background-image: url("../images/background7.PNG");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-
 }
 
-
-.heading {  text-align: center;
+.container-fluid {    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 1500px;
 }
 
 section {
     padding-top: 10px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
-h2 {    padding-top: 10px;
-    padding-bottom: 10px
-}
+/* font changes */
 
-h6 {    max-width: 240px;
+h2 {    
     padding-top: 10px;
     padding-bottom: 10px;
-        color: whitesmoke;
 }
 
-.findhotels {    padding-top: 10px;
+h4 {        
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+h6 {    
+    max-width: 240px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
-#listing {    padding-top: 10px;
+/* heading changes */
+
+.heading1 {  
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.heading2 {  
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* API formatting */
+
+.findhotels {    
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
+#listing {    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
-#map {height: 550px;
+#map {
+    height: 450px;
     max-width: 100%;
+    vertical-align: middle;
+}
+
+#controls {    
+    padding-bottom: 10px;
+}
+
+#locationField { 
+    padding-bottom: 10px;
+}
+
+/* image formatting */
+
+
+.pics {    
     padding-top: 10px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
-.pics {    padding-top: 10px;
-    padding-bottom: 10px
-}
-
-#pic-master { height: 550px;
+#pic-master { 
+    height: 550px;
     max-width: 384px;
     padding-top: 10px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
-.pic-text { max-width: 240px
-}
-
-#controls {    padding-bottom: 10px
-}
-
-#locationField { padding-bottom: 10px
-}
-
-#contacts {
-    padding-top: 10px
+.pic-text { 
+    max-width: 240px;
 }
 
 /* --------------- footer --------------*/
 
 #footer {
-    padding-top: 10px
+    padding-top: 10px;
 }
 
-
 .social-links {
-    padding-bottom: 15px
+    padding-bottom: 15px;
 }
 
 .social-links li a i {
@@ -88,11 +117,11 @@ h6 {    max-width: 240px;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out
+    -o-transition: all 0.35s ease-in-out;
 }
 
 .social-links li a i:hover {
-    background: #444fe9
+    background: #444fe9;
 }
 
 .fa:hover {
