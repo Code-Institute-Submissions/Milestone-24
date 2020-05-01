@@ -85,7 +85,7 @@ Multiple tests were completed to support the Application. Details of Manual test
 are document below.
 
 In addition, a table containing the results of tests completed across various criteria can be found in the following
- [link](https://github.com/tenerim/Milestone-2/tree/master/assets/Testing). 
+ [link](https://github.com/tenerim/Milestone-2/blob/master/assets/Testing/Testing.JPG). 
 
 External mark up validation services were also used to test the integrity of html and css code. 
 
