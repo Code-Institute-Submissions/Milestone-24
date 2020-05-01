@@ -78,7 +78,9 @@ name of the hotel; the address and contact number for the hotel; a link to the h
 * [Bootstrap](https://getbootstrap.com/)
   - to use ready-made design templates to enhance the front-end appearance and user-experience of the web-site 
 * [font-awesome](https://cdnjs.com/libraries/font-awesome)
-  - selected from the cdnjs libraries to support the 'Social' links in the footer of the Application 
+  - selected from the cdnjs libraries to support the 'Social' links in the footer of the Application
+* [Google Maps Platform](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch?hl=es-419)
+  - selected for the Google Maps Javascript API with autocomplete Hotel Search functionality
 
 # Testing
 Multiple tests were completed to support the Application. Details of Manual testing, User Story testing, and Process testing 
